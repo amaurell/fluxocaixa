@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    
+}
+.box01  {
+    padding-top: 25px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background: #ddd;
+}
+section .valores {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 201px 201px 0 rgba(0, 0, 0, 0.19);
+}
+.titulo {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+.box02 {
+    width: 100%;
+    height: 60px;
+   
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    /* padding-left: 6px; */
+    align-items: center;
+    background: black
+    
+}
+.box03 {
+    padding:20px;
+   
+}
+input {
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.valores input .entrada {
+    text-align: center;
+}
+
+
+#status {
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.btn-trash {
+    cursor: pointer;
+}
+.historico {
+    text-transform: uppercase;
+}
+
+

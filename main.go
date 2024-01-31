@@ -8,7 +8,7 @@ import (
 func main() {
 	fmt.Println("...port:3000")
 
-	dirHTML := http.FileServer(http.Dir("./"))
+	dirHTML := http.FileServer(http.Dir("./src"))
 	http.Handle("/", dirHTML)
 	http.ListenAndServe(":3000", nil)
 }

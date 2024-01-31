@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Fluxo de Caixa</title>
+</head>
+<body>
+    <section class="box01">
+        <div class="valores">
+            <p class="titulo">ENTRADA</p>
+            <input class="entrada" type="text" value="0" readonly size="8">
+            
+        </div>
+        <div class="valores">
+            <p class="titulo">SAÍDA</p>
+            <input class="saida" type="text" value="0" readonly size="8">
+            
+        </div>
+        <div class="valores">
+            <p class="titulo"> SALDO</p>
+            <input class="saldo" type="text" value="0" readonly size="8"> 
+        </div>
+    </section>
+    <section class="box02">
+        <input class="historico"    type="text" size="35" placeholder="histórico"  >
+        <input class="valor"  type="text" size="10"  placeholder="VALOR">
+        <select name="status" id="status" id="status">
+            <option value="">ent/sai</option>
+            <option value="entrada">entrada</option>
+            <option value="saida">saida</option>
+        </select>
+        <button type="button" class="btn btn-warning">Inclui</button>
+    </section>
+    <section class="box03">
+        <table class="table container ">
+            <thead>
+                <tr>
+                        <th>#</th>
+                        <th>Histórico</th>
+                        <th>Valor (R$)</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody class="box-list"></tbody>
+        </table>
+    </section>
+    <script src="./js/app.js" type = "module"></script>
+</body>
+</html>
